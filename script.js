@@ -1,13 +1,18 @@
 
 function emailSend() {
   let name = document.getElementById("name").value;
-  let surname = document.getElementById("surname").value;
+  let lastname = document.getElementById("lastname").value;
   let phone = document.getElementById("phone").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
+
+   if (name === "" || lastname === "" || email === "" || phone === "" || message === "") {
+    swal("Campi mancanti", "Compila tutti i campi obbligatori", "warning");
+    return; 
+  }
   
   let messageBody = "Name: " + name +
-  "<br/>Surname: " + surname + 
+  "<br/>Surname: " + lastname + 
   "<br/>Phone: " + phone + 
   "<br/>Email: " + email + 
   "<br/>Message: " + message; 
