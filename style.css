@@ -10862,3 +10862,10 @@ textarea.form-control-lg {
         min-width: 360px; 
     }
 }
+
+/* CSS per nascondere #cursor su schermi più piccoli */
+@media screen and (max-width: 1200px) {
+    #cursor {
+        display: none;
+    }
+}
