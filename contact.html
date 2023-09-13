@@ -19,10 +19,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column">
+    <div id="cursor"></div>
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -145,16 +146,18 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Core theme JS invio dati-->
     <script src="script.js"></script>
+    
+ <script>
+    function myFunction() {
+        document.getElementById("contactForm").reset();
+        swal("Dati eliminati", "Ricompila i campi", "warning")
+    }
 
-    <script>
-        function myFunction() {
-            document.getElementById("contactForm").reset();
-            swal("Dati eliminati", "Ricompila i campi", "warning")
-        }
 
+</script>
+    
 
-    </script>
-
+    <script src="cursore.js" ></script>
 
 
 

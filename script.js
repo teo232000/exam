@@ -7,7 +7,7 @@ function emailSend() {
   let message = document.getElementById("message").value;
 
    if (name === "" || lastname === "" || email === "" || phone === "" || message === "") {
-    swal("Campi mancanti", "Compila tutti i campi obbligatori", "warning");
+    // swal("Campi mancanti", "Compila tutti i campi obbligatori", "warning");
     return; 
   }
   

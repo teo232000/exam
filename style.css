@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 :root {
+  :root {
+    --purple22: #c2c2ff;
+    --dark22: #252821;
+}
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -10824,3 +10828,37 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
+#cursor {
+    width: 10rem;
+    height: 10rem;
+    background: #fff;
+    border-radius: 50%;
+    position: fixed;
+    transition: 0.001s;
+    transition: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+
+/* ridimensionamento bottone */
+@media screen and (min-width: 360px) {
+    /* Stili per schermi con larghezza massima di 300px */
+    .btn-download {
+        font-size: 14px; 
+        margin-left: 30px;
+     
+
+    }
+}
+
+
+/* ridimensionamento img */
+@media screen and (max-width: 767px) {
+    .carousel-img {
+        max-width: 100%; 
+        height: auto; 
+        min-width: 360px; 
+    }
+}
