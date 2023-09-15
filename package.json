@@ -13,11 +13,11 @@
     "file-saver": "^2.0.5",
     "formik": "^2.4.4",
     "joi": "^17.10.1",
+    "particlesjs": "^2.2.3",
     "popper.js": "^1.16.1",
     "validator": "^13.11.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
-  "devDependencies": {},
   "description": ""
 }

@@ -10829,8 +10829,8 @@ textarea.form-control-lg {
 }
 
 #cursor {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     background: #fff;
     border-radius: 50%;
     position: fixed;
@@ -10839,6 +10839,10 @@ textarea.form-control-lg {
     pointer-events: none;
     mix-blend-mode: difference;
     z-index: 9;
+}
+
+#cursorText{
+  cursor : pointer;
 }
 
 
@@ -10869,3 +10873,75 @@ textarea.form-control-lg {
         display: none;
     }
 }
+
+#content-wrapper {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: relative;
+    z-index: 1; 
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.text-orange{
+  color: #F29104 ;
+}
+
+/* icone a scomparsa e zoom pulsanti */
+
+.zoom-in{
+  transform: scale(.9);
+}
+.zoom-in:hover{
+  transform: scale(1.2);
+}
+
+/* navbar link */
+.nav-link{
+  position: relative;
+}
+
+.nav-link::after{
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.nav-link:hover::after{
+  content: "";
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after,
+.nav-link.current-page::after {
+  content: "";
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-link[aria-current="page"] {
+    font-weight: bold; 
+    color: greenyellow; 
+}
+
+.card-Teo{
+  position: relative;
+
+}
+
+
