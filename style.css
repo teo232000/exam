@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600;1,700&display=swap');
 :root {
   :root {
     --purple22: #c2c2ff;
@@ -10910,6 +10910,7 @@ textarea.form-control-lg {
 .nav-link::after{
   opacity: 0;
   transition: all 0.2s;
+
 }
 
 .nav-link:hover::after{
@@ -10921,6 +10922,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: 0;
   left: 0;
+  
 }
 
 .nav-link:hover::after,
@@ -10930,18 +10932,83 @@ textarea.form-control-lg {
   height: 2px;
   width: 100%;
   background-color: greenyellow;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
 }
-.nav-link[aria-current="page"] {
+.nav-item[aria-current="page"] {
     font-weight: bold; 
     color: greenyellow; 
 }
+/* .navbar-nav .nav-link.active {
+    font-weight: bold !important;
+   color: greenyellow !important;
+   
+   
+} */
 
-.card-Teo{
-  position: relative;
 
+.card-bodya {
+  width: 800px; 
+  height: 500px; 
+  justify-content: baseline;
+}
+
+.card-bodya img {
+  max-width: 100%; 
+  max-height: 100%; 
+}
+.column-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-left {
+  text-align: left;
 }
 
 
+a{
+  text-decoration: none;
+}
+hr{
+  color:#000;
+  height: 20px;
+  height:2px;
+  border-width:0;color:gray;background-color:gray
+}
+
+.hover-hide {
+   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.hover-hide:hover {
+  opacity: 0;
+ visibility: hidden;
+}
+
+.conttact{
+  font-family: 'Poppins', sans-serif;
+  /* text-decoration: underline; */
+  transition: 0.5s;
+  background-color: #f8f9fa;
+}
+/* 
+.conttact:hover{
+  transition: 01s; */
+  /* text-decoration: underline; 
+}*/
+
+.fp{
+  font-family: 'Poppins', sans-serif;
+}
+
+.tel:hover{
+   transition: 0.5s;
+  color: green !important;
+   text-decoration: underline;
+}
